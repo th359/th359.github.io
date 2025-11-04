@@ -10946,7 +10946,7 @@ p.lead {
   font-size: 1.3rem;         /* 他のアイコンと同サイズ */
   text-decoration: none;     /* 下線を消す */
   border-bottom: 0 !important;
-  transform: translateY(-1px);
+  transform: translateY(-2px);         /* まだ下がる場合は -1〜-2px で微調整 */
   /* line-height: 1;            /* 高さを整える */ */
   /* position: relative; */
   /* top: 1.0rem;              /* 少し上げてアイコンと高さを揃える */ */
