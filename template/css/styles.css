@@ -10943,9 +10943,10 @@ p.lead {
 .social-icons .cv-icon {
   font-family: "Font Awesome 5 Free", "Helvetica Neue", Arial, sans-serif; /* FontAwesomeに近いフォントに */
   font-weight: 600;
-  font-size: 1.0rem;         /* 他のアイコンと同サイズ */
+  font-size: 1.3rem;         /* 他のアイコンと同サイズ */
   text-decoration: none;     /* 下線を消す */
   border-bottom: 0 !important;
+  transform: translateY(-1px);
   /* line-height: 1;            /* 高さを整える */ */
   /* position: relative; */
   /* top: 1.0rem;              /* 少し上げてアイコンと高さを揃える */ */
