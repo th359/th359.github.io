@@ -10939,7 +10939,10 @@ p.lead {
 .social-icons .social-icon:hover {
   background-color: #9B003F;
 }
-
+.social-icons .cv-icon {
+  font-size: 1.2rem; /* 他アイコンと高さを揃えるため少し小さめ */
+  letter-spacing: 0.05em;
+}
 .dev-icons {
   font-size: 3rem;
 }
