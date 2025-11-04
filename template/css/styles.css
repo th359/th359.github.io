@@ -10939,9 +10939,12 @@ p.lead {
 .social-icons .social-icon:hover {
   background-color: #9B003F;
 }
+/* CVアイコン専用スタイル */
 .social-icons .cv-icon {
-  font-size: 1.2rem; /* 他アイコンと高さを揃えるため少し小さめ */
+  font-size: 1.2rem;              /* アイコンとの高さ調整 */
   letter-spacing: 0.05em;
+  font-weight: 600;               /* 太さ調整（見やすく） */
+  font-family: "Montserrat", sans-serif; /* ← ここでフォント指定 */
 }
 .dev-icons {
   font-size: 3rem;
