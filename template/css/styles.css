@@ -10947,7 +10947,8 @@ p.lead {
   text-decoration: none;     /* 下線を消す */
   line-height: 1;            /* 高さを整える */
   position: relative;
-  top: 0.05rem;              /* 少し上げてアイコンと高さを揃える */
+  border-bottom: 0 !important;
+  top: 0.10rem;              /* 少し上げてアイコンと高さを揃える */
 }
 .dev-icons {
   font-size: 3rem;
