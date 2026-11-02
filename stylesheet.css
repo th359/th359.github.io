@@ -1,142 +1,78 @@
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+/*
+ * Academic homepage customized for Taiga Hayami.
+ * Layout and classic typography based on Jon Barron's academic website:
+ * https://github.com/jonbarron/jonbarron.github.io
+ * See its README: "Feel free to clone this code for your own personal use."
+ * Core styling follows the upstream 800px table layout, Lato font,
+ * blue links, centered name, and 160px paper thumbnail format.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-a {
-  color: #1772d0;
-  text-decoration: none;
-}
-
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
-}
-
-body,
-td,
-th,
-tr,
-p,
-a {
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body, td, th, tr, p, a, li, summary, em {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
+  line-height: 1.5;
 }
-
-strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+body { margin: 0; color: #202020; background: #fff; }
+a { color: #1772d0; text-decoration: none; }
+a:focus, a:hover { color: #f09228; text-decoration: none; }
+a:focus-visible, summary:focus-visible { outline: 2px solid #1772d0; outline-offset: 3px; }
+strong { font-weight: 700; }
+h2 { margin: 0 0 12px; font-weight: normal; font-size: 22px; }
+p { margin: 0 0 12px; }
+.name { padding-top: 20px; margin: 0 0 15px; font-size: 32px; text-align: center; }
+.papertitle { font-size: 14px; font-weight: 700; }
+.page-table { width: 100%; max-width: 800px; border: 0; border-spacing: 0; border-collapse: separate; margin: 0 auto; }
+.page-table > tbody > tr > td { padding: 0; }
+.intro-table { width: 100%; border: 0; border-spacing: 0; border-collapse: separate; }
+.bio-cell { padding: 2.5%; width: 63%; vertical-align: middle; }
+.portrait-cell { padding: 2.5%; width: 37%; vertical-align: middle; text-align: center; }
+.portrait { width: 100%; max-width: 255px; height: auto; border-radius: 3px; }
+.profile-links { text-align: center; margin-top: 20px; }
+section { padding: 16px 2.5% 10px; }
+section#research { padding-top: 8px; }
+.news-list { padding-left: 20px; margin-top: 0; }
+.news-list li { margin-bottom: 6px; }
+.news-date { display: inline-block; min-width: 67px; font-weight: bold; }
+.publications-table { width: 100%; border: 0; border-spacing: 0 8px; border-collapse: separate; }
+.paper-row td { vertical-align: middle; }
+.paper-image-cell { width: 26%; padding: 12px 2% 12px 0; text-align: center; }
+.paper-text-cell { width: 74%; padding: 10px 0 10px 6px; }
+.paper-image { width: 160px; max-width: 100%; height: 116px; object-fit: contain; }
+.authors strong { font-size: 14px; }
+.paper-links { display: inline-block; margin-top: 3px; }
+.paper-description { margin: 8px 0 0; }
+.small-info { color: #606060; }
+.more-publications { padding: 10px 1px; border-bottom: 1px solid #e5e5e5; }
+.more-publications summary { cursor: pointer; color: #1772d0; font-weight: bold; }
+.more-publications summary:hover { color: #f09228; }
+.more-publications ul { margin: 12px 0 4px; padding-left: 24px; }
+.more-publications li { margin-bottom: 9px; }
+.more-publications .small-info { color: #606060; }
+.background-table { border-collapse: separate; border-spacing: 0 7px; }
+.background-table td:first-child { color: #666; white-space: nowrap; padding-right: 22px; vertical-align: top; }
+footer { color: #777; text-align: center; font-size: 12px; margin: 35px 2.5% 20px; border-top: 1px solid #eee; padding-top: 14px; }
+footer p, footer a { font-size: 12px; }
+@media (max-width: 600px) {
+  .intro-table, .intro-table tbody, .intro-table tr { display: block; }
+  .bio-cell, .portrait-cell { display: block; width: 100%; padding: 14px 5% 0; }
+  .bio-cell { padding-top: 3px; }
+  .name { padding-top: 14px; }
+  .portrait-cell { padding-top: 4px; }
+  .portrait { max-width: 180px; }
+  section { padding: 16px 5% 6px; }
+  .paper-image-cell { width: 32%; padding: 9px 4px 9px 0; }
+  .paper-text-cell { width: 68%; padding: 9px 0 9px 8px; }
+  .paper-image { width: 115px; height: 90px; }
+  .paper-description { margin-top: 6px; }
+  .news-date { min-width: auto; }
+  .background-table td:first-child { padding-right: 10px; }
 }
-
-h2 {
-  margin: 0;
-  font-weight: normal;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
-}
-
-.papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.name {
-  padding-top: 20px;
-  margin: 0;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
-}
-
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-span.highlight {
-  background-color: #ffffd0;
-}
-
-.colored-box {
-    color: black;
-    padding: 20px;
-    display: inline-block;
-    border-radius: 10px;
+@media (max-width: 370px) {
+  .paper-row, .paper-row td { display: block; width: 100%; }
+  .paper-image-cell { text-align: left; padding-bottom: 0; }
+  .paper-image { width: 160px; height: 110px; }
+  .paper-text-cell { padding: 4px 0 12px; }
 }
